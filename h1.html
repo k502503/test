@@ -14,26 +14,26 @@
 </ol>
  
 <h2>이건 이진탐색에 대한 설명</h2>
- 이진트리: 모든 노드가 2개의 서브 트리를 가지고 있는 트리
-이진트리의 성질 노드개수가 n이면 간선의 개수는 n-1
-높이가 h인 이진트리는 최소h~2^h -1개의 노드를 가짐
-n개의 노드를 가지는 이진트리의 높이는 최대n~최소log2(n+1)
-이진트리 구현(배열)노드i의 부모노드 인덱스=i/2
-왼쪽 자식노드 인덱스=2i
-오른쪽 자식노드 인덱스=2i+1
-이진트리 구현(연결리스트)
-void main() {    
-TreeNode  *n1, *n2, *n3;    
-n1 = (TreeNode *)malloc(sizeof(TreeNode));    
-n2 = (TreeNode *)malloc(sizeof(TreeNode));    
-n3 = (TreeNode *)malloc(sizeof(TreeNode)); 
-n1->data = 10; n1->llink = n2;    n1->rlink = n3; 
-n2->data = 20;    n2->llink = NULL;    n2->rlink = NULL; 
+ 이진트리: 모든 노드가 2개의 서브 트리를 가지고 있는 트리<br>
+이진트리의 성질 노드개수가 n이면 간선의 개수는 n-1<br>
+높이가 h인 이진트리는 최소h~2^h -1개의 노드를 가짐<br>
+n개의 노드를 가지는 이진트리의 높이는 최대n~최소log2(n+1)<br>
+이진트리 구현(배열)노드i의 부모노드 인덱스=i/2   <br>
+왼쪽 자식노드 인덱스=2i<br>
+오른쪽 자식노드 인덱스=2i+1<br>
+이진트리 구현(연결리스트)<br>
+void main() {<br>    
+TreeNode  *n1, *n2, *n3;<br>    
+n1 = (TreeNode *)malloc(sizeof(TreeNode));  <br>  
+n2 = (TreeNode *)malloc(sizeof(TreeNode));   <br>
+n3 = (TreeNode *)malloc(sizeof(TreeNode)); <br>
+n1->data = 10; n1->llink = n2;    n1->rlink = n3; <br>
+n2->data = 20;    n2->llink = NULL;    n2->rlink = NULL; <br>
 n3->data = 30;    n3->llink = NULL;    n3->rlink = NULL; // 일방적 삽입 
-}
-이진트리의 순회
-1.전위 순회:자식 노드보다 부모 노드를 먼저방문
-2.중위 순회:왼쪽자식,부모,오른쪽 자식 순으로 방문
-3.후위 순회:부모 노드보다 자식 노드를 먼저방문
+}<br>
+이진트리의 순회<br>
+1.전위 순회:자식 노드보다 부모 노드를 먼저방문<br>
+2.중위 순회:왼쪽자식,부모,오른쪽 자식 순으로 방문<br>
+3.후위 순회:부모 노드보다 자식 노드를 먼저방문<br>
 </body>
 </html>
